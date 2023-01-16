@@ -7,7 +7,7 @@
     <Grid RowDefinitions="*,Auto">
         <CollectionView x:Name="burgerList" Margin="10" SelectionMode="Single" SelectionChanged="SelectedItem">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Burger">
+                <DataTemplate x:DataType="models:MpBurger">
                     <VerticalStackLayout>
                         <BoxView Color="White" HeightRequest="20"/>
                         <Grid ColumnDefinitions="*,2*" RowDefinitions="*,*,*">

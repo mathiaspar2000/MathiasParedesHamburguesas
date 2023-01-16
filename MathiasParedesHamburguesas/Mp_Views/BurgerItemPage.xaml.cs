@@ -4,8 +4,8 @@ namespace MathiasParedesHamburguesas.Mp_Views;
 [QueryProperty(nameof(ItemId), nameof(ItemId))]
 public partial class BurgerItemPage : ContentPage
 {
-    Burger Item = new Burger();
-    Burger aux = new Burger();
+    MpBurger Item = new MpBurger();
+    MpBurger aux = new MpBurger();
     bool _flag;
     public int ItemId
     {
@@ -14,13 +14,13 @@ public partial class BurgerItemPage : ContentPage
     }
     public BurgerItemPage()
     {
-        List<Burger> burger = App.BurgerRepo.GetAllBurgers();
+        List<MpBurger> burger = App.BurgerRepo.GetAllBurgers();
         //burgerList.ItemsSource = burger; 
         InitializeComponent();
     }
     private void loadBurger(int id)
     {
-        Mp_Models.Burger burgerSearch = new Mp_Models.Burger();
+        Mp_Models.MpBurger burgerSearch = new Mp_Models.MpBurger();
         burgerSearch = App.BurgerRepo.getID(id);
         aux = burgerSearch;
         BindingContext = burgerSearch;
