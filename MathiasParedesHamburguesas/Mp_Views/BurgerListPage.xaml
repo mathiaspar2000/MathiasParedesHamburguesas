@@ -5,9 +5,9 @@
              xmlns:models="clr-namespace:MathiasParedesHamburguesas.Mp_Models"
              Title="MathiasParedesBurgerListPage">
     <Grid RowDefinitions="*,Auto">
-        <CollectionView x:Name="burgerList" Margin="10" SelectionMode="Single" SelectionChanged="SelectedItem">
+        <CollectionView x:Name="burgerList" Margin="10" SelectionMode="Single" SelectionChanged="CollectionView_SelectionChanced">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Burger">
+                <DataTemplate x:DataType="models:MpBurger">
                     <VerticalStackLayout>
                         <BoxView Color="White" HeightRequest="20"/>
                         <Grid ColumnDefinitions="*,2*" RowDefinitions="*,*,*">

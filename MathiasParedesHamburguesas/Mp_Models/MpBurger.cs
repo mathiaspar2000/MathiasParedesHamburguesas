@@ -7,8 +7,8 @@ using SQLite;
 
 namespace MathiasParedesHamburguesas.Mp_Models
 {
-    [Table("burger")]
-    public class Burger
+    [Table("Mpburger")]
+    public class MpBurger
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }

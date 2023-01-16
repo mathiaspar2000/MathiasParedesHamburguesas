@@ -4,9 +4,9 @@ namespace MathiasParedesHamburguesas;
 public partial class App : Application
 {
 
-    public static BurgerDatabase BurgerRepo { get; private set; }
+    public static MpBurgerDatabase BurgerRepo { get; private set; }
 
-    public App(BurgerDatabase repo)
+    public App(MpBurgerDatabase repo)
     {
         InitializeComponent();
 
